@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 // import GrannyCarousel from './carousels/willoughbys/meet-nanna/grannyCarousel';
 import BreakfastCarousel from './carousels/willoughbys/breakfast/breakfast-carousel';
-import Dragons304Carousel from './carousels/dragons/dragons304Carousel';
-import OpenSeasonCarousel from './carousels/openSeason/openSeasonCarousel';
-import MelanoffCarousel from './carousels/willoughbys/melanoff/melanoffCarousel';
-import TenLivesConfessionCarousel from './carousels/tenLives/tenLivesConfession';
+// import Dragons304Carousel from './carousels/dragons/dragons304Carousel';
+// import OpenSeasonCarousel from './carousels/openSeason/openSeasonCarousel';
+import MelanoffStoryCarousel from './carousels/willoughbys/melanoff/melanoffCarousel';
+// import TenLivesConfessionCarousel from './carousels/tenLives/tenLivesConfession';
 // import OpenSeason1 from './videoPlayers/openSeason';
 import Resume from '../resume/resume';
 
@@ -44,18 +44,18 @@ class Home extends Component {
       //   return (<GrannyCarousel className="hero-carousel" />);
       case "breakfast":
         return (<BreakfastCarousel className="hero-carousel" />);
-      case "dragons":
-          return (<Dragons304Carousel className="hero-carousel" />);
+      // case "dragons":
+      //     return (<Dragons304Carousel className="hero-carousel" />);
       // case "openSeason":
       //     return (<OpenSeasonCarousel className="hero-carousel" />);
       case "melanoff":
-          return (<MelanoffCarousel className="hero-carousel" />);
+          return (<MelanoffStoryCarousel className="hero-carousel" />);
       // case "openSeasonVideo1":
       //     return (<OpenSeason1 className="hero-carousel hero-video" />);
       case "resume": 
           return (<Resume className="hero-carousel"/>)
-      case "tenLivesConfession": 
-          return (<TenLivesConfessionCarousel className="hero-carousel"/>)
+      // case "tenLivesConfession": 
+      //     return (<TenLivesConfessionCarousel className="hero-carousel"/>)
       default: 
       return <img src={hero1} alt="Mark Stanleigh" />;
     }

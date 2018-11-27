@@ -2,7 +2,7 @@ import React from 'react';
 import Carousel from 'nuka-carousel';
 import { melanoffImgs } from './melanoff';
 
-export default class Dragons304Carousel extends React.Component {
+export default class MelanoffStoryCarousel extends React.Component {
   render() {
     return (
       <Carousel 
