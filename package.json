@@ -1,0 +1,39 @@
+{
+  "name": "mark-stanleigh",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.5.1",
+    "bfg": "^0.3.0",
+    "bulma": "^0.7.2",
+    "connected-react-router": "^5.0.1",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.5",
+    "nuka-carousel": "^4.4.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-pdf": "^4.0.0",
+    "react-player": "^1.7.0",
+    "react-responsive-carousel": "^3.1.43",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.4",
+    "redux": "^4.0.1",
+    "video-react": "^0.13.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

@@ -1,0 +1,182 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  overflow: hidden;
+
+  a {
+    text-decoration: none;
+    color: rgb(51, 196, 253);
+  }
+
+  .title-container {
+    width: 99%;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 15%;
+    img.title-image {
+      height: 5rem;
+      width: auto;
+      margin: auto;
+    }
+  }
+
+  .home-links-hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .home-links-container {
+    height: 100%;
+    width: 25%;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .all-sticky-container {
+    height: 80vh;
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .title-and-hero {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+  }
+
+  .sticky {
+    position: absolute;
+    margin: 1rem;
+    width: 15vw;
+    height: auto;
+    z-index: 1;
+  }
+
+  .two-sticky {
+    margin-top: -3.5rem;
+  }
+
+  .willo-sticky {
+    margin-top: -3rem;
+  }
+
+  .other-sticky {
+    margin-bottom: 2rem;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+
+  .link-item {
+    z-index: 100000;
+    max-width: 110%;
+    font-family: 'Patrick Hand SC';
+    font-weight: 500;
+    padding-left: 1rem;
+    cursor: pointer;
+    color: rgb(10, 10, 10);
+    :hover {
+      color: rgb(171, 177, 165);
+    }
+  }
+
+  .willo-links {
+    margin-top: 0.25rem;
+    margin-left: 2.5rem;
+    z-index: 100000;
+  }
+
+  .resume-link {
+    z-index: 100000;
+    margin-top: 4rem;
+    margin-left: 2rem;
+  }
+
+  .dragons-link {
+    margin-top: 5.25rem;
+    margin-left: 2.25rem;
+  }
+
+  .ten-lives-link {
+    margin-top: -0.5rem;
+    margin-left: 2.25rem;
+  }
+
+  .link-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem !important;
+  }
+  .my-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    z-index: 1000;
+    margin: 0;
+    img {
+      width: 55%;
+      height: 80vh;
+      margin: auto;
+    }
+    .hidden {
+      display: none !important;
+    }
+  }
+
+  .home-hero-img {
+    height: 80vh;
+    width: 100%;
+    background-color: #383838;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    img {
+      max-height: 80vh;
+      width: auto;
+      height: 100%;
+      margin: auto;
+    }
+    .hero-carousel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      width: 60%;
+      margin: auto;
+      img {
+        max-height: 80vh;
+        width: auto;
+        height: 100%;
+        margin: auto;
+      }
+    }
+  }
+
+  .thumbs {
+    max-height: 80vh;
+    margin: auto;
+  }
+
+  .sticky-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
