@@ -4,7 +4,7 @@ import BreakfastCarousel from './carousels/willoughbys/breakfast/breakfast-carou
 import Dragons304Carousel from './carousels/dragons/dragons304Carousel';
 // import OpenSeasonCarousel from './carousels/openSeason/openSeasonCarousel';
 import MelanoffStoryCarousel from './carousels/willoughbys/melanoffStory/melanoffStoryCarousel';
-// import TenLivesConfessionCarousel from './carousels/tenLives/tenLivesConfession';
+import TenLivesConfessionCarousel from './carousels/tenLives/tenLivesConfession';
 // import OpenSeason1 from './videoPlayers/openSeason';
 import Resume from '../resume/resume';
 
@@ -55,8 +55,8 @@ class Home extends Component {
       //     return (<OpenSeason1 className="hero-carousel hero-video" />);
       case "resume": 
           return (<Resume className="hero-carousel"/>)
-      // case "tenLivesConfession": 
-      //     return (<TenLivesConfessionCarousel className="hero-carousel"/>)
+      case "tenLivesConfession": 
+          return (<TenLivesConfessionCarousel className="hero-carousel"/>)
       default: 
       return <img src={hero1} alt="Mark Stanleigh" />;
     }
