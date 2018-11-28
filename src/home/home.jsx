@@ -5,7 +5,7 @@ import Dragons304Carousel from './carousels/dragons/dragons304Carousel';
 // import OpenSeasonCarousel from './carousels/openSeason/openSeasonCarousel';
 import MelanoffStoryCarousel from './carousels/willoughbys/melanoffStory/melanoffStoryCarousel';
 import TenLivesConfessionCarousel from './carousels/tenLives/tenLivesConfession';
-// import OpenSeason1 from './videoPlayers/openSeason';
+// import TenLivesConventionCarousel from './carousels/tenLives/convention/tenLivesConvention';
 import Resume from '../resume/resume';
 
 const hero1 = require('../images/homePage/MainPage01.jpg')
@@ -21,7 +21,7 @@ const TwoSticky = require('../images/sticky-notes/StickyNote02b.jpg');
 
 
 const heroImages = [hero1, hero2, hero3, hero4, hero5]
-let heroImg = hero1;
+let heroImg = hero5;
 
 class Home extends Component {
   constructor() {
@@ -57,6 +57,8 @@ class Home extends Component {
           return (<Resume className="hero-carousel"/>)
       case "tenLivesConfession": 
           return (<TenLivesConfessionCarousel className="hero-carousel"/>)
+      // case "tenLivesConvention": 
+      //     return (<TenLivesConventionCarousel className="hero-carousel"/>)
       default: 
       return <img src={hero1} alt="Mark Stanleigh" />;
     }
@@ -67,7 +69,7 @@ class Home extends Component {
   }
 
   setHeroImg() {
-    const num = Math.floor(Math.random() * 4)
+    const num = Math.floor(Math.random() * 5)
     heroImg = heroImages[num]
     console.log(heroImg)
     return heroImg;
@@ -99,6 +101,9 @@ class Home extends Component {
   showTenLivesConfession() {
     this.setState({carousel: "tenLivesConfession", backgroundColour: "gray"})
   }
+  showTenLivesConvention() {
+    this.setState({carousel: "tenLivesConvention", backgroundColour: "gray"})
+  }
   handleResumeClick() {
     this.setState({carousel: "resume", backgroundColour: "gray"})
   }
@@ -121,6 +126,7 @@ class Home extends Component {
             <div className="sticky-container">
               <img src={TwoSticky} alt="Sticky Note" className="sticky two-sticky" />
                 <div onClick={() => this.showTenLivesConfession()} className="link-item ten-lives-link">CONFESSION</div>
+                <div onClick={() => this.showTenLivesConvention()} className="link-item ten-lives-link">CONVENTION</div>
                 <div onClick={() => this.showDragonsCarousel()} className="link-item dragons-link">DRAGONS</div>
             </div>
             <div className="sticky-container">
