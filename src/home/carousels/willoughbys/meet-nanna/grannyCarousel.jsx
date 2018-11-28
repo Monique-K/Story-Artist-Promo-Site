@@ -15,7 +15,7 @@ export default class GrannyCarousel extends React.Component {
       autoplayInterval = {1000}
       >
       {grannyImgs.map(img => {
-        return <img src={img} alt="Meet Nanna storyboard" />
+        return <img src={img} alt="Meet Nanny storyboard" />
       })}
       </Carousel>
     );

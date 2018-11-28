@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import GrannyCarousel from './carousels/willoughbys/meet-nanna/grannyCarousel';
+import GrannyCarousel from './carousels/willoughbys/meet-nanna/grannyCarousel';
 import BreakfastCarousel from './carousels/willoughbys/breakfast/breakfast-carousel';
 import Dragons304Carousel from './carousels/dragons/dragons304Carousel';
 // import OpenSeasonCarousel from './carousels/openSeason/openSeasonCarousel';
@@ -41,8 +41,8 @@ class Home extends Component {
           alt="Mark Stanleigh" 
           />
         );
-      // case "granny":
-      //   return (<GrannyCarousel className="hero-carousel" />);
+      case "granny":
+        return (<GrannyCarousel className="hero-carousel" />);
       case "breakfast":
         return (<BreakfastCarousel className="hero-carousel" />);
       case "dragons":
@@ -77,9 +77,9 @@ class Home extends Component {
   showHeroImg() {
     this.setState({carousel: "hero", backgroundColour: "gray"})
   }
-  // showGrannyCarousel() {
-  //   this.setState({carousel: "granny"})
-  // }
+  showGrannyCarousel() {
+    this.setState({carousel: "granny"})
+  }
   showBreakfastCarousel() {
     this.setState({carousel: "breakfast", backgroundColour: "gray"})
   }
@@ -119,14 +119,14 @@ class Home extends Component {
               <img src={WSticky} alt="Sticky Note" className="sticky willo-sticky" />
               <div className="willo-links">
                   <div onClick={() => this.showMelanoffCarousel()} className="link-item">MELANOFF STORY</div>
-                  {/* <div onClick={() => this.showGrannyCarousel()} className="link-item">NANNY BACKSTORY</div> */}
+                  <div onClick={() => this.showGrannyCarousel()} className="link-item">NANNY BACKSTORY</div>
                   <div onClick={() => this.showBreakfastCarousel()} className="link-item">NANNY BREAKFAST</div>
               </div>
             </div>
             <div className="sticky-container">
               <img src={TwoSticky} alt="Sticky Note" className="sticky two-sticky" />
                 <div onClick={() => this.showTenLivesConfession()} className="link-item ten-lives-link">CONFESSION</div>
-                <div onClick={() => this.showTenLivesConvention()} className="link-item ten-lives-link">CONVENTION</div>
+                {/* <div onClick={() => this.showTenLivesConvention()} className="link-item ten-lives-link">CONVENTION</div> */}
                 <div onClick={() => this.showDragonsCarousel()} className="link-item dragons-link">DRAGONS</div>
             </div>
             <div className="sticky-container">
