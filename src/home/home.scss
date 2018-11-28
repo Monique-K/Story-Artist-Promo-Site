@@ -34,7 +34,7 @@
 
   .home-links-container {
     height: 100%;
-    width: 25%;
+    width: 100%;
     margin-right: 1rem;
     display: flex;
     flex-direction: column;
@@ -42,12 +42,13 @@
   }
 
   .all-sticky-container {
-    height: 80vh;
+    height: 100vh;
     width: 17%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-top: -5rem;
   }
 
   .title-and-hero {
@@ -58,22 +59,25 @@
 
   .sticky {
     position: absolute;
-    margin: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
     width: 15vw;
     height: auto;
     z-index: 1;
   }
 
   .two-sticky {
-    margin-top: -3.5rem;
+    // margin-top: -3.5rem;
   }
 
   .willo-sticky {
-    margin-top: -3rem;
+    // margin-top: -3rem;
   }
 
   .other-sticky {
-    margin-bottom: 2rem;
+    // margin-bottom: 2rem;
   }
   
   .hidden {
@@ -82,9 +86,10 @@
 
   .link-item {
     z-index: 100000;
-    max-width: 110%;
+    // max-width: 120%;
     font-family: 'Patrick Hand SC';
     font-weight: 500;
+    font-size: 0.85rem;
     padding-left: 1rem;
     cursor: pointer;
     color: rgb(10, 10, 10);
@@ -94,8 +99,10 @@
   }
 
   .willo-links {
-    margin-top: 0.25rem;
-    margin-left: 2.5rem;
+    margin-top: 3.25rem;
+    margin-left: 2.75rem;
+    width: 10rem;
+    height: auto;
     z-index: 100000;
   }
 
@@ -111,8 +118,8 @@
   }
 
   .ten-lives-link {
-    margin-top: -0.5rem;
-    margin-left: 2.25rem;
+    margin-top: 3rem;
+    margin-left: 2.5rem;
   }
 
   .link-title {
@@ -142,11 +149,16 @@
   .home-hero-img {
     height: 80vh;
     width: 100%;
-    background-color: #383838;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 100;
+    :gray {
+      background-color: #383838;
+    }
+    :white {
+      background-color: white;
+    }
     img {
       max-height: 80vh;
       width: auto;
@@ -177,6 +189,17 @@
   .sticky-container {
     display: flex;
     flex-direction: column;
+    width: auto;
+  }
+
+  .logos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 90%;
+      height: 20vh;
+    }
   }
 
 }
