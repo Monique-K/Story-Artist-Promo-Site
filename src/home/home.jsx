@@ -57,7 +57,7 @@ class Home extends Component {
       case "resume": 
           return (<Resume className="hero-carousel"/>)
       case "tenLivesConfession": 
-          return (<TenLivesConfessionCarousel className="hero-carousel"/>)
+          return (<TenLivesConfessionCarousel className="hero-carousel"/>);
       // case "tenLivesConvention": 
       //     return (<TenLivesConventionCarousel className="hero-carousel"/>)
       default: 
@@ -98,7 +98,7 @@ class Home extends Component {
   }
   // showOpenSeasonCarousel() {
   //   this.setState({carousel: "openSeason"})
-  }
+  // }
   showTenLivesConfession() {
     this.setState({carousel: "tenLivesConfession", backgroundColour: "gray"})
   }
