@@ -3,10 +3,11 @@ import GrannyCarousel from './carousels/willoughbys/meet-nanna/grannyCarousel';
 import BreakfastCarousel from './carousels/willoughbys/breakfast/breakfast-carousel';
 import Dragons304Carousel from './carousels/dragons/dragons304Carousel';
 // import OpenSeasonCarousel from './carousels/openSeason/openSeasonCarousel';
-import MelanoffStoryCarousel from './carousels/willoughbys/melanoffStory/melanoffStoryCarousel';
+// import MelanoffStoryCarousel from './carousels/willoughbys/melanoffStory/melanoffStoryCarousel';
 import TenLivesConfessionCarousel from './carousels/tenLives/tenLivesConfession';
 // import TenLivesConventionCarousel from './carousels/tenLives/convention/tenLivesConvention';
 import Resume from '../resume/resume';
+// import OpenSeason1 from './videoPlayers/openSeason';
 
 const hero1 = require('../images/homePage/MainPage01.jpg')
 const hero2 = require('../images/homePage/MainPage02.jpg')
@@ -49,8 +50,8 @@ class Home extends Component {
           return (<Dragons304Carousel className="hero-carousel" />);
       // case "openSeason":
       //     return (<OpenSeasonCarousel className="hero-carousel" />);
-      case "melanoff":
-          return (<MelanoffStoryCarousel className="hero-carousel" />);
+      // case "melanoff":
+      //     return (<MelanoffStoryCarousel className="hero-carousel" />);
       // case "openSeasonVideo1":
       //     return (<OpenSeason1 className="hero-carousel hero-video" />);
       case "resume": 
@@ -97,7 +98,7 @@ class Home extends Component {
   }
   // showOpenSeasonCarousel() {
   //   this.setState({carousel: "openSeason"})
-  // }
+  }
   showTenLivesConfession() {
     this.setState({carousel: "tenLivesConfession", backgroundColour: "gray"})
   }
@@ -128,6 +129,8 @@ class Home extends Component {
                 <div onClick={() => this.showTenLivesConfession()} className="link-item ten-lives-link">CONFESSION</div>
                 {/* <div onClick={() => this.showTenLivesConvention()} className="link-item ten-lives-link">CONVENTION</div> */}
                 <div onClick={() => this.showDragonsCarousel()} className="link-item dragons-link">DRAGONS</div>
+                {/* <div onClick={() => this.showOpenSeasonCarousel()} className="link-item dragons-link">OPEN SEASON</div> */}
+
             </div>
             <div className="sticky-container">
               <img src={OSticky} alt="Sticky Note" className="sticky other-sticky" />
