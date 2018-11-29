@@ -3,7 +3,7 @@ import GrannyCarousel from './carousels/willoughbys/meet-nanna/grannyCarousel';
 import BreakfastCarousel from './carousels/willoughbys/breakfast/breakfast-carousel';
 import Dragons304Carousel from './carousels/dragons/dragons304Carousel';
 // import OpenSeasonCarousel from './carousels/openSeason/openSeasonCarousel';
-// import MelanoffStoryCarousel from './carousels/willoughbys/melanoffStory/melanoffStoryCarousel';
+import MelanoffStoryCarousel from './carousels/willoughbys/melanoffStory/melanoffStoryCarousel';
 import TenLivesConfessionCarousel from './carousels/tenLives/tenLivesConfession';
 // import TenLivesConventionCarousel from './carousels/tenLives/convention/tenLivesConvention';
 import Resume from '../resume/resume';
@@ -50,8 +50,8 @@ class Home extends Component {
           return (<Dragons304Carousel className="hero-carousel" />);
       // case "openSeason":
       //     return (<OpenSeasonCarousel className="hero-carousel" />);
-      // case "melanoff":
-      //     return (<MelanoffStoryCarousel className="hero-carousel" />);
+      case "melanoff":
+          return (<MelanoffStoryCarousel className="hero-carousel" />);
       // case "openSeasonVideo1":
       //     return (<OpenSeason1 className="hero-carousel hero-video" />);
       case "resume": 
@@ -119,22 +119,22 @@ class Home extends Component {
             <div className="sticky-container">
               <img src={WSticky} alt="Sticky Note" className="sticky willo-sticky" />
               <div className="willo-links">
-                  <div onClick={() => this.showMelanoffCarousel()} className="link-item">MELANOFF STORY</div>
-                  <div onClick={() => this.showGrannyCarousel()} className="link-item">NANNY BACKSTORY</div>
-                  <div onClick={() => this.showBreakfastCarousel()} className="link-item">NANNY BREAKFAST</div>
+                  <div onClick={() => this.showMelanoffCarousel()} className="link-item">- MELANOFF STORY</div>
+                  <div onClick={() => this.showGrannyCarousel()} className="link-item">- NANNY BACKSTORY</div>
+                  <div onClick={() => this.showBreakfastCarousel()} className="link-item">- NANNY BREAKFAST</div>
               </div>
             </div>
             <div className="sticky-container">
               <img src={TwoSticky} alt="Sticky Note" className="sticky two-sticky" />
-                <div onClick={() => this.showTenLivesConfession()} className="link-item ten-lives-link">CONFESSION</div>
-                {/* <div onClick={() => this.showTenLivesConvention()} className="link-item ten-lives-link">CONVENTION</div> */}
-                <div onClick={() => this.showDragonsCarousel()} className="link-item dragons-link">DRAGONS</div>
-                {/* <div onClick={() => this.showOpenSeasonCarousel()} className="link-item dragons-link">OPEN SEASON</div> */}
+                <div onClick={() => this.showTenLivesConfession()} className="link-item ten-lives-link">- CONFESSION</div>
+                {/* <div onClick={() => this.showTenLivesConvention()} className="link-item ten-lives-link">- CONVENTION</div> */}
+                <div onClick={() => this.showDragonsCarousel()} className="link-item dragons-link">- DRAGONS</div>
+                {/* <div onClick={() => this.showOpenSeasonCarousel()} className="link-item dragons-link">- OPEN SEASON</div> */}
 
             </div>
             <div className="sticky-container">
               <img src={OSticky} alt="Sticky Note" className="sticky other-sticky" />
-              <div className="link-item resume-link" onClick={() => this.handleResumeClick()}>RESUME</div>
+              <div className="link-item resume-link" onClick={() => this.handleResumeClick()}>- RESUME</div>
             </div>
           </div>
         </div>

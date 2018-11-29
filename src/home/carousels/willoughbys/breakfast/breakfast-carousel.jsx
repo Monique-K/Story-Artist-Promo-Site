@@ -7,7 +7,7 @@ export default class BreakfastCarousel extends React.Component {
     return (
       <Carousel 
       className="my-carousel" 
-      autoplay
+      autoplay 
       renderBottomCenterControls={false}
       width = "300"
       easing = "easeOutCirc"
