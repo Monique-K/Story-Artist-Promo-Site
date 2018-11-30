@@ -29,7 +29,8 @@ class Home extends Component {
     super()
     this.state = {
       carousel: "hero",
-      backgroundColour: "gray"
+      backgroundColour: "gray",
+      showLogos: true
     }
   }
 
@@ -76,37 +77,37 @@ class Home extends Component {
     return heroImg;
   }
   showHeroImg() {
-    this.setState({carousel: "hero", backgroundColour: "gray"})
+    this.setState({carousel: "hero", backgroundColour: "gray", showLogos: true})
   }
   showGrannyCarousel() {
-    this.setState({carousel: "granny"})
+    this.setState({carousel: "granny", backgroundColour: "gray", showLogos: true})
   }
   showBreakfastCarousel() {
-    this.setState({carousel: "breakfast", backgroundColour: "gray"})
+    this.setState({carousel: "breakfast", backgroundColour: "gray", showLogos: true})
   }
   showMelanoffCarousel() {
-    this.setState({carousel: "melanoff", backgroundColour: "gray"})
+    this.setState({carousel: "melanoff", backgroundColour: "gray", showLogos: true})
   }
   showTenLivesCarousel() {
-    this.setState({carousel: "tenLives", backgroundColour: "gray"})
+    this.setState({carousel: "tenLives", backgroundColour: "gray", showLogos: true})
   }
   showTransformersCarousel() {
-    this.setState({carousel: "transformers", backgroundColour: "gray"})
+    this.setState({carousel: "transformers", backgroundColour: "gray", showLogos: true})
   }
   showDragonsCarousel() {
-    this.setState({carousel: "dragons", backgroundColour: "gray"})
+    this.setState({carousel: "dragons", backgroundColour: "gray", showLogos: true})
   }
   // showOpenSeasonCarousel() {
-  //   this.setState({carousel: "openSeason"})
+  //   this.setState({carousel: "openSeason", showLogos: true, backgroundColour: "gray"})
   // }
   showTenLivesConfession() {
-    this.setState({carousel: "tenLivesConfession", backgroundColour: "gray"})
+    this.setState({carousel: "tenLivesConfession", backgroundColour: "gray", showLogos: true})
   }
   showTenLivesConvention() {
-    this.setState({carousel: "tenLivesConvention", backgroundColour: "gray"})
+    this.setState({carousel: "tenLivesConvention", backgroundColour: "gray", showLogos: true})
   }
   handleResumeClick() {
-    this.setState({carousel: "resume", backgroundColour: "gray"})
+    this.setState({carousel: "resume", backgroundColour: "gray", showLogos: false})
   }
   
 
@@ -117,24 +118,15 @@ class Home extends Component {
         <div className="all-sticky-container">
           <div className="home-links-container">
             <div className="sticky-container">
-              <img src={WSticky} alt="Sticky Note" className="sticky willo-sticky" />
-              <div className="willo-links">
-                  <div onClick={() => this.showMelanoffCarousel()} className="link-item">- MELANOFF STORY</div>
-                  <div onClick={() => this.showGrannyCarousel()} className="link-item">- NANNY BACKSTORY</div>
-                  <div onClick={() => this.showBreakfastCarousel()} className="link-item">- NANNY BREAKFAST</div>
-              </div>
-            </div>
-            <div className="sticky-container">
-              <img src={TwoSticky} alt="Sticky Note" className="sticky two-sticky" />
-                <div onClick={() => this.showTenLivesConfession()} className="link-item ten-lives-link">- CONFESSION</div>
-                {/* <div onClick={() => this.showTenLivesConvention()} className="link-item ten-lives-link">- CONVENTION</div> */}
-                <div onClick={() => this.showDragonsCarousel()} className="link-item dragons-link">- DRAGONS</div>
-                {/* <div onClick={() => this.showOpenSeasonCarousel()} className="link-item dragons-link">- OPEN SEASON</div> */}
-
-            </div>
-            <div className="sticky-container">
-              <img src={OSticky} alt="Sticky Note" className="sticky other-sticky" />
-              <div className="link-item resume-link" onClick={() => this.handleResumeClick()}>- RESUME</div>
+              <img src={require("../images/sticky-notes/StickyNotesAll.jpg")} alt="Sticky Note" className="sticky" />
+              <div onClick={() => this.showMelanoffCarousel()} className="link-item melanoff-link">- MELANOFF STORY</div>
+              <div onClick={() => this.showGrannyCarousel()} className="link-item nanny-link">- NANNY BACKSTORY</div>
+              <div onClick={() => this.showBreakfastCarousel()} className="link-item bfast-link">- NANNY BREAKFAST</div>
+              <div onClick={() => this.showTenLivesConfession()} className="link-item confession-link">- CONFESSION</div>
+              <div onClick={() => this.showTenLivesConvention()} className="link-item convention-link">- CONVENTION</div> 
+              <div onClick={() => this.showDragonsCarousel()} className="link-item dragons-link">- DRAGONS</div> 
+              <div onClick={() => this.showOpenSeasonCarousel()} className="link-item open-season-link">- OPEN SEASON</div> 
+              <div onClick={() => this.handleResumeClick()} className="link-item resume-link">- RESUME</div>
             </div>
           </div>
         </div>
@@ -155,7 +147,7 @@ class Home extends Component {
               <img 
                 src={require("../images/homePage/CompanyLogos.jpg")} 
                 alt="Logos" 
-                className="logos"
+                className={`${this.state.showLogos === true ? "logos" : "hidden"}`}
               />
             </div>
           </div>

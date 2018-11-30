@@ -33,51 +33,39 @@
   }
 
   .home-links-container {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     margin-right: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .sticky-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    margin-top: -2rem;
   }
 
   .all-sticky-container {
-    height: 100vh;
+    // height: 100%;
     width: 17%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-top: -8rem;
+    // margin-top: -8rem;
   }
 
   .title-and-hero {
     display: flex;
     flex-direction: column;
     max-width: 80%;
-  }
-
-  .sticky {
-    position: absolute;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    // margin-bottom: 1rem;
-    padding: 0.5rem;
-    width: 15vw;
-    height: auto;
-    z-index: 1;
-  }
-
-  .two-sticky {
-    // margin-top: -3.5rem;
-  }
-
-  .willo-sticky {
-    // margin-top: -3rem;
-  }
-
-  .other-sticky {
-    // margin-bottom: 2rem;
   }
   
   .hidden {
@@ -86,11 +74,10 @@
 
   .link-item {
     z-index: 100000;
-    // max-width: 120%;
     font-family: 'Patrick Hand SC';
     font-weight: 500;
     font-size: 0.85rem;
-    padding-left: 1rem;
+    padding-left: 3.5rem;
     cursor: pointer;
     color: rgb(10, 10, 10);
     :hover {
@@ -98,35 +85,34 @@
     }
   }
 
-  .willo-links {
-    margin-top: 3.25rem;
-    margin-left: 2.75rem;
-    width: 10rem;
-    height: auto;
-    z-index: 100000;
+  .melanoff-link {
+    margin-top: 2.75rem;
   }
 
-  .resume-link {
-    z-index: 100000;
-    margin-top: 4rem;
-    margin-left: 2rem;
+  .bfast-link {
+    margin-bottom: 3.75rem;
+  }
+
+  .convention-link{
+    margin-bottom: 3rem;
   }
 
   .dragons-link {
-    margin-top: 5.25rem;
-    margin-left: 2.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    margin-left: -5rem;
   }
 
-  .ten-lives-link {
-    margin-top: 3rem;
-    margin-left: 2.5rem;
+  .open-season-link {
+    margin-top: 2.75rem;  
+    margin-left: -4rem; 
   }
 
-  .link-title {
-    text-align: center;
-    font-weight: 600;
-    font-size: 1rem !important;
+  .resume-link {
+    margin-top: 6rem;
+    margin-left: -4rem;
   }
+
   .my-carousel {
     display: flex;
     flex-direction: column;
@@ -184,12 +170,6 @@
   .thumbs {
     max-height: 80vh;
     margin: auto;
-  }
-
-  .sticky-container {
-    display: flex;
-    flex-direction: column;
-    width: auto;
   }
 
   .logos-container {
