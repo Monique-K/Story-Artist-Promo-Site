@@ -1,5 +1,5 @@
-# MStanleighPromoSite
-Mark Stanleigh is a storyboard artist. This is his website. It's an online portfolio featuring snippets of his work. 
+# Storyboard Artist Promo Site
+Mark Stanleigh is a storyboard artist. This is his website. It's an online portfolio featuring snippets of his work. Its cool design and smooth functionality makes you want to hire him to do your storyboards and me to make your website.
 
 ## Slideshows
 Check out scenes from past and upcoming work. Click on the scene name to watch the storyboards come alive before your eyes!
@@ -14,6 +14,6 @@ Tired of seeing the same image every time you log onto a site? Not here! Every t
 ![Site Homepage](https://github.com/Monique-K/MStanleighPromoSite/blob/master/src/images/readme/home-and-background.png)
 
 ## Dependencies
-React
-Nuka Carousel
-Bulma
+- React
+- Nuka Carousel
+- Bulma
