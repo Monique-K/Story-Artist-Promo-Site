@@ -67,6 +67,16 @@
     flex-direction: column;
     max-width: 80%;
   }
+
+  .sticky {
+    position: absolute;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    width: 15vw;
+    height: auto;
+    z-index: 1;
+  }
   
   .hidden {
     display: none !important;

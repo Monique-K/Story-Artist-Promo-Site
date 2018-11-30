@@ -4,6 +4,15 @@ Mark Stanleigh is a storyboard artist. This is his website. It's an online portf
 ##Slideshows
 Check out scenes from past and upcoming work. Click on the scene name to watch the storyboards come alive before your eyes!
 
+![alt text](https://github.com/Monique-K/MStanleighPromoSite/tree/master/src/images/readme/storyboards.jpg)
+
+And do the scenes autoplay? You bet they do! No clicking "Next" for you! Just sit back and enjoy.
+
+##Rotating Homescreen Images
+Tired of seeing the same image every time you log onto a site? Not here! Every time you log on, a background image is randomly selected for you. 
+
+![alt text](https://github.com/Monique-K/MStanleighPromoSite/tree/master/src/images/readme/home-and-background.jpg)
+
 ##Dependencies
 React
 Nuka Carousel
