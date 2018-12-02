@@ -1,5 +1,25 @@
 .about-container {
+  text-align: center;
+  color: black;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  height: 200vh !important;
+  overflow: visible !important;
 
-  
+  h3 {
+    font-weight: 600;
+  }
 
+  .left {
+    text-align: left;
+  }
+
+  .lines {
+    width: 70%;
+    margin-left: 15%;
+  }
 }

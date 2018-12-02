@@ -39,23 +39,23 @@ class Home extends Component {
           />
         );
       case "granny":
-        return (<GrannyCarousel className="hero-carousel" />);
+        return (<GrannyCarousel className="home-hero-img hero-carousel" />);
       case "breakfast":
-        return (<BreakfastCarousel className="hero-carousel" />);
+        return (<BreakfastCarousel className="home-hero-img hero-carousel" />);
       case "dragons":
-          return (<Dragons304Carousel className="hero-carousel" />);
+          return (<Dragons304Carousel className="home-hero-img hero-carousel" />);
       // case "openSeason":
       //     return (<OpenSeasonCarousel className="hero-carousel" />);
       case "melanoff":
-          return (<MelanoffStoryCarousel className="hero-carousel" />);
-      case "resume": 
-          return (<Resume className="hero-carousel"/>)
-      case "tenLivesConfession": 
-          return (<TenLivesConfessionCarousel className="hero-carousel"/>);
-      case "tenLivesConvention": 
-          return (<TenLivesConventionCarousel className="hero-carousel"/>)
+          return (<MelanoffStoryCarousel className="home-hero-img hero-carousel" />);
+          case "tenLivesConfession": 
+          return (<TenLivesConfessionCarousel className="home-hero-img hero-carousel"/>);
+          case "tenLivesConvention": 
+          return (<TenLivesConventionCarousel className="home-hero-img hero-carousel"/>)
+          case "resume": 
+              return (<Resume className="text-page"/>)
       case "about": 
-          return(<AboutPage className="hero-carousel" />)
+          return(<AboutPage className="text-page" />)
       default: 
       return <img src={hero1} alt="Mark Stanleigh" />;
     }
@@ -105,7 +105,7 @@ class Home extends Component {
     this.setState({carousel: "resume", backgroundColour: "white", showLogos: false})
   }
   showAboutPage() {
-    this.setState({carousel: "resume", backgroundColour: "white", showLogos: false})
+    this.setState({carousel: "about", backgroundColour: "white", showLogos: false})
   }  
 
   render() {
@@ -138,7 +138,7 @@ class Home extends Component {
               />
             </div>
           </div>
-            <div className={`home-hero-img ${this.state.backgroundColour === "gray" ? "gray" : "white"}`}>
+            <div className={`${this.state.backgroundColour === "gray" ? "gray" : "white"}`}>
               {this.renderHeroComponent()}
             </div>  
             <div className="logos-container">
