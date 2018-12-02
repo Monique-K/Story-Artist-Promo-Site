@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import GrannyCarousel from './carousels/willoughbys/meet-nanna/grannyCarousel';
 import BreakfastCarousel from './carousels/willoughbys/breakfast/breakfast-carousel';
 import Dragons304Carousel from './carousels/dragons/dragons304Carousel';
+import DragonsSurroundedCarousel from './carousels/dragons/surrounded/dragonsSurroundedCarousel';
 // import OpenSeasonCarousel from './carousels/openSeason/openSeasonCarousel';
 import MelanoffStoryCarousel from './carousels/willoughbys/melanoffStory/melanoffStoryCarousel';
 import TenLivesConfessionCarousel from './carousels/tenLives/tenLivesConfession';
@@ -44,6 +45,8 @@ class Home extends Component {
         return (<BreakfastCarousel className="home-hero-img hero-carousel" />);
       case "dragons":
           return (<Dragons304Carousel className="home-hero-img hero-carousel" />);
+      case "dragonsSurrounded":
+          return (<DragonsSurroundedCarousel className="home-hero-img hero-carousel" />);
       // case "openSeason":
       //     return (<OpenSeasonCarousel className="hero-carousel" />);
       case "melanoff":
@@ -92,6 +95,9 @@ class Home extends Component {
   showDragonsCarousel() {
     this.setState({carousel: "dragons", backgroundColour: "gray", showLogos: true})
   }
+  showDragonsSurroundedCarousel() {
+    this.setState({carousel: "dragonsSurrounded", backgroundColour: "gray", showLogos: true})
+  }
   // showOpenSeasonCarousel() {
   //   this.setState({carousel: "openSeason", showLogos: true, backgroundColour: "gray"})
   // }
@@ -121,7 +127,8 @@ class Home extends Component {
               <div onClick={() => this.showBreakfastCarousel()} className="link-item bfast-link">- NANNY BREAKFAST</div>
               <div onClick={() => this.showTenLivesConfession()} className="link-item confession-link">- CONFESSION</div>
               <div onClick={() => this.showTenLivesConvention()} className="link-item convention-link">- CONVENTION</div> 
-              <div onClick={() => this.showDragonsCarousel()} className="link-item dragons-link">- DRAGONS</div> 
+              <div onClick={() => this.showDragonsCarousel()} className="link-item dragons-link">- 304</div> 
+              <div onClick={() => this.showDragonsSurroundedCarousel()} className="link-item surrounded-link">- SURROUNDED</div>
               <div onClick={() => this.showOpenSeasonCarousel()} className="link-item open-season-link">- OPEN SEASON</div> 
               <div onClick={() => this.handleResumeClick()} className="link-item resume-link">- RESUME</div>
               <div onClick={() => this.showAboutPage()} className="link-item about-link">- ABOUT</div>
