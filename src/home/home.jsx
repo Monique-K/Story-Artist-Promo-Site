@@ -5,20 +5,15 @@ import Dragons304Carousel from './carousels/dragons/dragons304Carousel';
 // import OpenSeasonCarousel from './carousels/openSeason/openSeasonCarousel';
 import MelanoffStoryCarousel from './carousels/willoughbys/melanoffStory/melanoffStoryCarousel';
 import TenLivesConfessionCarousel from './carousels/tenLives/tenLivesConfession';
-// import TenLivesConventionCarousel from './carousels/tenLives/convention/tenLivesConvention';
+import TenLivesConventionCarousel from './carousels/tenLives/convention/tenLivesConvention';
 import Resume from '../resume/resume';
-// import OpenSeason1 from './videoPlayers/openSeason';
+import AboutPage from '../about/about';
 
 const hero1 = require('../images/homePage/MainPage01.jpg')
 const hero2 = require('../images/homePage/MainPage02.jpg')
 const hero3 = require('../images/homePage/MainPage03.jpg')
 const hero4 = require('../images/homePage/MainPage04.jpg')
 const hero5 = require('../images/homePage/MainPage05.jpg')
-
-const WSticky = require('../images/sticky-notes/StickyNote01.jpg');
-const OSticky = require('../images/sticky-notes/StickyNote04.jpg');
-const TwoSticky = require('../images/sticky-notes/StickyNote02b.jpg');
-
 
 
 const heroImages = [hero1, hero2, hero3, hero4, hero5]
@@ -53,14 +48,14 @@ class Home extends Component {
       //     return (<OpenSeasonCarousel className="hero-carousel" />);
       case "melanoff":
           return (<MelanoffStoryCarousel className="hero-carousel" />);
-      // case "openSeasonVideo1":
-      //     return (<OpenSeason1 className="hero-carousel hero-video" />);
       case "resume": 
           return (<Resume className="hero-carousel"/>)
       case "tenLivesConfession": 
           return (<TenLivesConfessionCarousel className="hero-carousel"/>);
-      // case "tenLivesConvention": 
-      //     return (<TenLivesConventionCarousel className="hero-carousel"/>)
+      case "tenLivesConvention": 
+          return (<TenLivesConventionCarousel className="hero-carousel"/>)
+      case "about": 
+          return(<AboutPage className="hero-carousel" />)
       default: 
       return <img src={hero1} alt="Mark Stanleigh" />;
     }
@@ -107,9 +102,11 @@ class Home extends Component {
     this.setState({carousel: "tenLivesConvention", backgroundColour: "gray", showLogos: true})
   }
   handleResumeClick() {
-    this.setState({carousel: "resume", backgroundColour: "gray", showLogos: false})
+    this.setState({carousel: "resume", backgroundColour: "white", showLogos: false})
   }
-  
+  showAboutPage() {
+    this.setState({carousel: "resume", backgroundColour: "white", showLogos: false})
+  }  
 
   render() {
     return (
@@ -127,6 +124,7 @@ class Home extends Component {
               <div onClick={() => this.showDragonsCarousel()} className="link-item dragons-link">- DRAGONS</div> 
               <div onClick={() => this.showOpenSeasonCarousel()} className="link-item open-season-link">- OPEN SEASON</div> 
               <div onClick={() => this.handleResumeClick()} className="link-item resume-link">- RESUME</div>
+              <div onClick={() => this.showAboutPage()} className="link-item about-link">- ABOUT</div>
             </div>
           </div>
         </div>

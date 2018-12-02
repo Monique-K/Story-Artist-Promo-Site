@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from 'nuka-carousel';
-import { tenLivesConventionImgs } from './tenLivesConventionImgs';
+import { conventionImgs } from './conventionImgs';
 
 
 export default class TenLivesConventionCarousel extends React.Component {
@@ -15,7 +15,7 @@ export default class TenLivesConventionCarousel extends React.Component {
         speed = {300}
         autoplayInterval = {1000}
       >
-      {tenLivesConventionImgs.map(img => {
+      {conventionImgs.map(img => {
         return <img src={img} alt="10 Lives storyboards" />
       })}
       </Carousel>
